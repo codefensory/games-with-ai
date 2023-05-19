@@ -1,0 +1,19 @@
+{
+  "name": "nn-ai",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "start": "npx tsc && nodemon -q dist/index.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11"
+  }
+}
