@@ -1,12 +1,12 @@
 {
-  "name": "nn-ai",
+  "name": "tic-tac-toe",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "private": true,
   "scripts": {
     "build": "tsup src/index.ts --format cjs --dts",
-    "dev": "npm run build -- --watch",
-    "start": "npm run build && nodemon -q dist/index.js"
+    "dev": "npm run build -- --watch"
   },
   "license": "ISC",
   "devDependencies": {

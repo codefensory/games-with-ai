@@ -3,7 +3,6 @@ import {
   ActivationFunctionsKeys,
   costFunctions,
   CostFunctionsKeys,
-  initializeFunctions,
   InitializeFunctionsKeys,
 } from "./neuronFunctions";
 import { Layer } from "./layer";
