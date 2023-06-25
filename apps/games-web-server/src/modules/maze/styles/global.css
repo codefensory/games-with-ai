@@ -1,0 +1,47 @@
+.container-maze {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board-maze {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  width: 400px;
+  height: 400px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-group > button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cell {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cell.end {
+  background-color: red;
+}
+
+.cell.block {
+  background-color: black;
+}
+
+.cell.player {
+  background-color: green;
+}
